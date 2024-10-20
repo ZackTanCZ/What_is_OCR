@@ -5,6 +5,7 @@ The EasyOCR library is well-suited for this task due to its simplicity. Our use 
 ![ab_07_sf144](https://github.com/user-attachments/assets/88c48230-6c7d-499e-956d-833021bd7500)
 
 Figure 1.0 - Example screenshot of a Auto-Battle session
+
 *Note - The important statistics include _duration, kill count, meso gained, red meso gained and total exp gained_.
 
 The following libraries are used in our use case
