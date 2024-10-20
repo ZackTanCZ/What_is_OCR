@@ -12,9 +12,10 @@ The following libraries are used in our use case
   1. EasyOCR
   2. PLI
   3. Numpy
-  4. cv2
-  5. glob
-  6. pandas 
+  4. Pandas
+  5. matplotlib
+  6. cv2
+  7. glob
 
 
 
