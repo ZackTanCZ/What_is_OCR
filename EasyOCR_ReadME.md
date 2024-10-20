@@ -1,9 +1,18 @@
-MapleStory Mobile (MSM) is a mobile MMORPG, inspired by Maplestory the popular MMORPG by Nexon. In simpler terms,it is a game of gathering resource to get stronger items and conquer bosses. To this end, players should seek to accumulate the greatest amount of resource within the shortest period of time. With the introduction of the Auto-Battle (AB) system in MSM, players can take a data-driven approach to decide how to achieve their goal of accumulating resources.  
+MapleStory Mobile (MSM) is a mobile MMORPG inspired by the popular MMORPG, Maplestory, by Nexon. In essence, it's a game about gathering resources to enhance equipment and conquer challenging endgame content. To maximize resource accumulation, players often seek to optimize their gameplay. The introduction of the Auto-Battle (AB) system in MSM has provided a new opportunity for data-driven decision-making.
 
-The EasyOCR library is suitable for this task as our use case is relatively simple. EasyOCR will only need to scan the screenshot(s) of each AB session to extract the relevent statistics for analysis. Each screenshot doesn't change much. Therefore, we should not expect much variation in the extraction outcome. 
+The EasyOCR library is well-suited for this task due to its simplicity. Our use case involves scanning screenshots of AB sessions to extract relevant statistics for analysis. Given the consistent nature of the screenshots, we anticipate minimal variation in extraction results.
 
-Figure 1.0
-Example screenshot of AB session
 ![ab_07_sf144](https://github.com/user-attachments/assets/88c48230-6c7d-499e-956d-833021bd7500)
+Figure 1.0 - Example screenshot of a Auto-Battle session
+*Note - The important statistics include _duration, kill count, meso gained, red meso gained and total exp gained_.
 
-Referring to Figure 1.0, the 
+The following libraries are used in our use case
+  1. EasyOCR
+  2. PLI
+  3. Numpy
+  4. cv2
+  5. glob
+  6. pandas 
+
+
+
