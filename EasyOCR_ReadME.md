@@ -7,10 +7,12 @@ The EasyOCR library is well-suited for this task due to its simplicity. Our use 
 Figure 1.0 - Example screenshot of a Auto-Battle session
 
 *Note - The important statistics include _duration, kill count, meso gained, red meso gained and total exp gained_.
+
 The EasyOCR library scans through each screenshot to extract the important statistics. Extra  measures are taken to validate and rectify erroneous extraction results. These results are then stored into dataframe for further data processing. 
 
 ![sample_image](https://github.com/user-attachments/assets/080ca1ed-b0fa-4924-afe8-595289557182)
 
+Figure 1.1 - Extracted statistic (highlighted in green boxes) from Auto-Battle session
 
 The following libraries are used in our use case
   1. EasyOCR
