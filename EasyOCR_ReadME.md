@@ -54,7 +54,7 @@ The glob library is used to perform pattern matching for files and directories. 
 list_of_image =  glob.glob(r'ab_*.jpg')
   ```
 
-With the above code, filenames starting with the prefix "ab_" are selected
+Using the above line of code, filenames starting with the prefix "ab_" are selected as Auto-Battle screenshots have a prefix of "ab_"
 </details>
 
 
