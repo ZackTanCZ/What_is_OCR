@@ -59,5 +59,19 @@ Using the above line of code, filenames starting with the prefix "ab_" are selec
 
 
 
+<details>
+  <summary>Things to note</summary>
+  <img src="https://github.com/user-attachments/assets/141135a9-f876-4aa9-b6d4-99ce034401dc">
+
+  - Notice that the total exp figure extract is off by one digit. This has to be manually amended. One potential way to catch this error is through outlier dectection.
+
+  ```
+  duration = inner_list[0][1].replace(inner_list[0][1][-3],':')
+  ```
+  - In some cases, we observe that the duration statistic is invalid as the colon has been misread as a period by the EasyOCR library. To ensure the accuracy our result, the above line of code replaces the any punctuation found in the duration statistic with a colon. 
+
+</details>
+
+
 
 
