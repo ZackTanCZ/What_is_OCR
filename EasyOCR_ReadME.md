@@ -14,24 +14,47 @@ The EasyOCR library scans through each screenshot to extract the important stati
 
 Figure 1.1 - Extracted statistic (highlighted in green boxes) from Auto-Battle session
 
-The following libraries are used in our use case
-  1. EasyOCR
-  2. PLI
-  3. Numpy
-  4. Pandas
-  5. matplotlib
-  6. cv2
-  7. glob
+<details>
+  <summary>Python libraries are used in our use case  </summary>
+    EasyOCR, PLI, Numpy, Pandas, matplotlib, cv2, glob
+</details>
 
 <details>
-  <summary>Spoiler warning</summary>
+  <summary>The EasyOCR Library</summary>
   
-  Spoiler text. Note that it's important to have a space after the summary tag. You should be able to write any markdown you want inside the `<details>` tag... just make sure you close `<details>` afterward.
-  
-  ```javascript
-  console.log("I'm a code block!");
+The EasyOCR library is used to extract text from each screenshot. A _Reader_ object is first intialised into the variable '_reader_'. After which the image is parse into the _.readtext()_ function and the result is returned.  
   ```
+  reader = easyocr.Reader(['en'], gpu = False)
+  result = reader.readtext(image_path)
+  ```
+</details>
+
+<details>
+  <summary>The CV2 Library</summary>
   
+The CV2 library is used to visualise each extracted element of the image through the _.imread()_ function. Refer to Figure 1.1 for an example
+  ```
+  # Visualise each extracted element of the image using the function - checkImage
+  img = cv2.imread(image_path,1)
+  checked_img = checkImage(img, result)
+  plt.imshow(checked_img)
+  plt.show()
+  
+  # Save the image to the desktop
+  plt.imsave('sample_image.jpg', checked_img)
+  ```
+</details>
+
+
+<details>
+  <summary>The glob Library</summary>
+  
+The glob library is used to perform pattern matching for files and directories. It provides a simple way to find files that matches a specific pattern.
+  ```
+list_of_image =  glob.glob(r'ab_*.jpg')
+  ```
+
+With the above code, filenames starting with the prefix "ab_" are selected
 </details>
 
 
