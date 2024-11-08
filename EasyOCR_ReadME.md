@@ -2,7 +2,7 @@ MapleStory Mobile (MSM) is a mobile MMORPG inspired by the popular MMORPG, Maple
 
 The EasyOCR library is well-suited for this task due to its simplicity. Our use case involves scanning screenshots of AB sessions to extract relevant statistics for future analysis. Given the consistent nature of the screenshots, we anticipate minimal variation in extraction results.
 
-![ab_08_sf144](https://github.com/user-attachments/assets/b74899d5-71f0-4862-ba1d-935080a2a641)
+<img src="https://github.com/user-attachments/assets/b74899d5-71f0-4862-ba1d-935080a2a641" width="250" height="200"/>
 
 Figure 1.0 - Example screenshot of a Auto-Battle session
 
@@ -10,7 +10,7 @@ Figure 1.0 - Example screenshot of a Auto-Battle session
 
 The EasyOCR library scans through each screenshot to extract the important statistics. Extra  measures are taken to validate and rectify erroneous extraction results. These results are then stored into dataframe for further data processing. 
 
-![sample_image](https://github.com/user-attachments/assets/080ca1ed-b0fa-4924-afe8-595289557182)
+<img src="https://github.com/user-attachments/assets/080ca1ed-b0fa-4924-afe8-595289557182" width="250" height="200"/>
 
 Figure 1.1 - Extracted statistic (highlighted in green boxes) from Auto-Battle session
 
@@ -149,12 +149,12 @@ Using the above line of code, filenames starting with the prefix "ab_" are selec
     - Exp Group -  Non-Equal Variance (use Welch t-Test)
       - Conclusion: Non-Equal mean between groups (average xp/hr ***differs***) 
   
-  💡There is no need to compare SF144 vs. SF158 as it follows that SF158 is superior to SF150 which is superior to SF144
+  💡There is no need to compare SF144 vs. SF158 as it follows that SF158 is superior to SF150, which is superior to SF144
 </details>
 
 
 <details>
-  <summary>One Way Kruskal-Wallis H Test</summary>
+  <summary>Testing of Three Groups</summary>
 
   - Used to compare the means between ***Three or more*** groups
   - ANOVA (parametric) & Kruskal Wallis Test (Non-parametric)
@@ -165,9 +165,9 @@ Using the above line of code, filenames starting with the prefix "ab_" are selec
       - Conclusion: Non-Equal mean between groups (average xp/hr ***differs***)
      
   - Following Kruskal Wallis Test, dunn's test is conducted
-    
-    -![image](https://github.com/user-attachments/assets/b1b651df-db7a-4515-9867-8043bf4f1de3)
 
-    -![image](https://github.com/user-attachments/assets/ba0e8503-500c-4896-bda2-aa5ebda238a3)
+    - <img src="https://github.com/user-attachments/assets/b1b651df-db7a-4515-9867-8043bf4f1de3" width="350" height="200"/>
+
+    - <img src="https://github.com/user-attachments/assets/ba0e8503-500c-4896-bda2-aa5ebda238a3" width="350" height="200"/>
 
 </details>
