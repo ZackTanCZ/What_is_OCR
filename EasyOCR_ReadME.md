@@ -171,3 +171,50 @@ Using the above line of code, filenames starting with the prefix "ab_" are selec
     - <img src="https://github.com/user-attachments/assets/ba0e8503-500c-4896-bda2-aa5ebda238a3" width="350" height="200"/>
 
 </details>
+
+<details>
+  <summary>Findings and Conclusion</summary>
+
+  <details>
+    <summary>SF144 vs. SF150</summary>
+    
+TL;DR - Pick <ins>***SF144 for meso only***</ins>; else SF150
+
+  A two-sample t-test was conducted to compare the hourly average meso and experience rates between SF144 and SF150. The results indicate that there is no statistically significant difference in the hourly average meso rate between the two maps. However, a statistically significant difference was found in the hourly average experience rate.
+
+Preliminary analysis revealed a slight decrease in the hourly average meso rate (-2.54%) on SF150 compared to SF144. Conversely, a notable increase in the hourly average experience rate (+9.81%) was observed on SF150.
+
+Given the objective of maximizing overall resource gain, <ins>SF150 is preferred</ins>. The relatively small, statistically insignificant decrease in meso rate is outweighed by the significant increase in experience rate. This conclusion is further supported by the results of the t-test, which confirm that the difference in meso rates is likely due to chance, while the difference in experience rates is statistically significant.
+  
+  </details>
+
+  <details>
+    <summary>SF150 vs. SF158</summary>
+  
+TL;DR - Pick <ins>***SF158***</ins> over SF150  
+  
+  A two-sample t-test was conducted to compare the hourly average meso and experience rates between SF150 and SF158. The results indicate that there is a statistically significant difference in both the hourly average meso rate and the hourly average experience rate between both maps.
+
+
+Preliminary analysis revealed a substantial increase in both the hourly average meso rate (31.74%) and the hourly average experience rate (24.32%) on SF158 compared to SF150.
+
+Given the objective of maximizing overall resource gain, <ins>SF158 is preferred</ins>. The statistically significant increases in both meso and experience rates on SF158 make it a superior choice. This conclusion is further supported by the results of the t-test, which confirm that the differences in both meso and experience rates are not due to chance.
+  
+  </details>
+
+  <details>
+    <summary>SF144 vs. SF150 vs. SF158</summary>
+
+TL;DR - Pick <ins>***SF158***</ins> over all the other options  
+    
+  A one-way Kruskal-Wallis test was conducted to compare the hourly average meso and experience rates among SF144, SF150, and SF158. The results indicate that at least one group has a significantly different mean compared to the others.
+
+Preliminary analysis revealed that SF158 has higher hourly average meso and experience rates compared to both SF144 and SF150.
+
+To determine specific pairwise differences, a post-hoc Dunn's test was conducted. For the meso rate, significant differences were found between SF144 and SF158, and between SF150 and SF158. For the experience rate, significant differences were found between all pairwise comparisons.
+
+Based on these findings, <ins>SF158 is the superior map</ins> in terms of both meso and experience gain. This conclusion is further supported by the previous t-test results.
+  
+  </details>
+  
+</details>
