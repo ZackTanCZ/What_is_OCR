@@ -80,6 +80,19 @@ Using the above line of code, filenames starting with the prefix "ab_" are selec
     - Two approaches - Critical Value and P-Value (Prefered Approach)   
   - To test if there's an statistically significant difference between the mean/median of each group of samples
   - In our use case, it answers the question - Is there a difference in the hourly meso/exp rate between each different map?
+  - ```
+    # Shapiro-Wilk Test
+    tStat, pVal = shapiro(series)
+
+    # Levene's Test
+    tStat, pVal = levene(group_one, group_two)
+
+    # Two Sample t-Test (non-equal var) for Meso Group
+    tStat_meso, pVal_meso = stats.ttest_ind(a = sf144_meso, b = sf150_meso, equal_var = False, random_state = 5512)
+
+    # Kruskal Wallis Test for Meso Group
+    tStat_meso, pVal_meso = stats.kruskal(sf144_meso, sf150_meso,sf158_meso)
+    ```
 
 </details>
 
@@ -89,6 +102,11 @@ Using the above line of code, filenames starting with the prefix "ab_" are selec
   - Perform various posthoc analysis (e.g. Dunn's Test, Dunnett's Test, Tukey HSD Test) following a parametric or non-parametric statistical tests
     - Doing pairwise comparison to determine the group of samples with higher mean
   - In our use case, it answers the question - which map has the higher hourly meso/exp rate?
+  - ```
+    # Dunn's Test for Meso Group
+    posthoc_results = sp.posthoc_dunn(a = dftotal_meso, val_col = 'Meso', group_col = 'Map')
+    display(posthoc_results)
+    ```
 
 </details>
 
