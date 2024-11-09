@@ -14,10 +14,7 @@ The EasyOCR library scans through each screenshot to extract the important stati
 
 Figure 1.1 - Extracted statistic (highlighted in green boxes) from Auto-Battle session
 
-<details>
-  <summary>Python libraries are used in our use case  </summary>
-    EasyOCR, PLI, Numpy, Pandas, matplotlib, cv2, glob, scipy, scikit_posthoc
-</details>
+# Python Libraries
 
 <details>
   <summary>The EasyOCR Library</summary>
@@ -232,6 +229,14 @@ Preliminary analysis revealed that SF158 has higher hourly average meso and expe
 To determine specific pairwise differences, a post-hoc Dunn's test was conducted. For the meso rate, significant differences were found between SF144 and SF158, and between SF150 and SF158. For the experience rate, significant differences were found between all pairwise comparisons.
 
 Based on these findings, <ins>SF158 is the superior map</ins> in terms of both meso and experience gain. This conclusion is further supported by the previous t-test results.
+  
+  </details>
+  
+  <details>
+    <summary>Future Works & Limitations</summary>
+
+One area worth exploring is to extend the boundry of analysis to higher starforce maps (e.g. SF168, SF180,SF184) or Arcane Force Maps (AF60, AF90) to make meaningful comparisons.
+
   
   </details>
   
